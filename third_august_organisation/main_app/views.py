@@ -8,3 +8,6 @@ def kontant_view(request):
 
 def ziele_view(request):
     return render(request, 'ziele.html')
+
+def spenden_view(request):
+    return render(request, 'spenden.html')
