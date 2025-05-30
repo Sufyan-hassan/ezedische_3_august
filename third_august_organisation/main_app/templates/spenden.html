@@ -1,6 +1,18 @@
 {% extends "base.html" %}
 {% load static %}
 
+{# Include Font Awesome CDN for icon fonts #}
+{% block head %}
+    {{ block.super }}
+ <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  integrity="sha512-pVU7+zXQVumzayJhjzF2+clATxGcxp4rvhT0hB+GrHwTBpQ7ohLc0Yng7XBMzV6Z7XU3B0PT1Yp1VIK3KNVYKg=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+{% endblock %}
+
 {% block title %}Spenden{% endblock %}
 
 {% block content %}
@@ -20,6 +32,23 @@
       <a href="tel:+4917632765269">+49&nbsp;176&nbsp;327&nbsp;65269</a>
     </p>
 
+    <div class="mt-4">
+      <div class="mt-4 social-icons">
+      <strong>تابعنا:</strong>
+      <a href="https://facebook.com/yourpage" target="_blank" aria-label="Facebook" class="mx-2">
+        <img src="{% static 'icons/facebook.svg' %}" alt="Facebook icon" width="32" height="32">
+      </a>
+      <a href="https://twitter.com/yourprofile" target="_blank" aria-label="Twitter" class="mx-2">
+        <img src="{% static 'icons/twitter.svg' %}" alt="Twitter icon" width="32" height="32">
+      </a>
+      <a href="https://instagram.com/yourprofile" target="_blank" aria-label="Instagram" class="mx-2">
+        <img src="{% static 'icons/instagram.svg' %}" alt="Instagram icon" width="32" height="32">
+      </a>
+      <a href="https://linkedin.com/company/yourcompany" target="_blank" aria-label="LinkedIn" class="mx-2">
+        <img src="{% static 'icons/linkedin.svg' %}" alt="LinkedIn icon" width="32" height="32">
+      </a>
+      </div>
+    </div>
   </div>
 </section>
 {% endblock %}
